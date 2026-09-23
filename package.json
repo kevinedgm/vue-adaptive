@@ -1,0 +1,43 @@
+{
+  "name": "@kevinedgm/vue-adaptive",
+  "version": "0.1.0",
+  "description": "Adaptive experience primitives for Vue 3: compact/medium/expanded policies driven by available space.",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/vue-adaptive.umd.cjs",
+  "module": "./dist/vue-adaptive.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-adaptive.js",
+      "require": "./dist/vue-adaptive.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "vue-tsc --noEmit",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "peerDependencies": {
+    "vue": ">=3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.8.0",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.0",
+    "vue": "^3.5.0",
+    "vue-tsc": "^3.0.0"
+  },
+  "keywords": ["vue", "vue3", "adaptive", "responsive", "container", "design-system", "ui"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinedgm/vue-adaptive.git"
+  }
+}
